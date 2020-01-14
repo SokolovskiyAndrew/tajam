@@ -394,6 +394,9 @@ nav {
     max-width: 460px; }
     .logos_list_item {
       margin: 20px 30px; }
+      .logos_list_item:hover {
+        transform: scale(1.05);
+        cursor: pointer; }
 
 .footer {
   background-image: url(../img/footer_bg.png);
@@ -425,14 +428,12 @@ nav {
     margin-top: 10px; }
   .last form {
     display: flex;
-    justify-content: center;
-    max-width: 290px; }
+    justify-content: center; }
     .last form input[type=text] {
       background-color: transparent;
       border: 1px solid #ededed;
       width: 100%;
-      max-width: 210px;
-      min-height: 46px; }
+      max-width: 210px; }
       .last form input[type=text]:focus {
         color: white; }
     .last form button {
@@ -502,8 +503,25 @@ nav {
 @media screen and (max-width: 898px) {
   .news_wrapper {
     justify-content: center; }
+  form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+  .form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+    .form h2 {
+      align-self: center;
+      text-align: center; }
+    .form input[type=submit] {
+      align-self: center; }
   .textbox_button input {
     margin-bottom: 40px; }
+  .logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
   .logo_title {
     padding: 20px 0 36px;
     max-width: 260px;
